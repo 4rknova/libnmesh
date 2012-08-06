@@ -1,0 +1,10 @@
+LIBNMESH
+
+Copyright 2010 - 2012 (c) Papadopoulos Nikos <nikpapas@gmail.com>
+
+The library implements a collection of datatypes and utilities
+that are useful for manipulation of 3d mesh datasets.
+
+Version history
+===============
+0.1.x.x	HEAD
