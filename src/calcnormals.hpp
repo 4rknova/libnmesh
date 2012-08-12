@@ -28,6 +28,7 @@
 #ifndef NMESH_CALCNORMALS_HPP_INCLUDED
 #define NMESH_CALCNORMALS_HPP_INCLUDED
 
+#include "declspec.h"
 #include "mesh.hpp"
 
 namespace NMesh {
@@ -35,7 +36,7 @@ namespace NMesh {
 
 // RETURN CODES:
 // 0. Everything went well.
-int calc_normals(Mesh &mesh);
+DECLSPEC int calc_normals(Mesh &mesh);
 
 	} /* namespace Mutator */
 } /* namespace NMesh */

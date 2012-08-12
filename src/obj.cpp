@@ -146,17 +146,17 @@ int obj(const char* filename, Mesh &mesh)
 				}
 				else if (sscanf(line, "f %d/%d %d/%d %d/%d",
 						&i1, &i2, &i4, &i5, &i7, &i8 ) == 6) {
-						i3 = i6 = i9 = 0.f;
+						i3 = i6 = i9 = 0;
 					has_uvs = true;
 				}
 				else if (sscanf(line, "f %d//%d %d//%d %d//%d",
 						&i1, &i3, &i4, &i6, &i7, &i9 ) == 6) {
-						i2 = i5 = i8 = 0.f;
+						i2 = i5 = i8 = 0;
 					has_normals = true;
 				}
 				else if (sscanf(line, "f %d %d %d",
 						&i1, &i4, &i7 ) == 3) {
-						i2 = i3 = i5 = i6 = i8 = i9 = 0.f;
+						i2 = i3 = i5 = i6 = i8 = i9 = 0;
 				}
 				else {
 					syntax_error = true;

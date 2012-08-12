@@ -34,6 +34,13 @@
 
 namespace NMesh {
 
+// For visual studio:
+// Disable "<type> needs to have dll-interface to be used by clients"
+// This warning refers to STL member variables which are private and
+// therefore can be safely ignored.
+#pragma warning(push) 
+#pragma warning(disable : 4251) // unreferenced formal parameter
+
 class DECLSPEC Mesh
 {
 	public:
@@ -59,6 +66,8 @@ class DECLSPEC Mesh
 		Buffer<vertex_t> m_vertices;
 		Buffer<index_t> m_indices;
 };
+
+#pragma warning (pop)
 
 } /* namespace NMesh */
 

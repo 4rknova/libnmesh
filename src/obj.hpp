@@ -28,6 +28,7 @@
 #ifndef NMESH_OBJ_HPP_INCLUDED
 #define NMESH_OBJ_HPP_INCLUDED
 
+#include "declspec.h"
 #include "mesh.hpp"
 
 namespace NMesh {
@@ -47,7 +48,7 @@ namespace NMesh {
 // 3. Failed to open file.
 // 4. Invalid format.
 // 5. Failed to initialize the Mesh.
-int obj(const char *file, Mesh &mesh);
+DECLSPEC int obj(const char *file, Mesh &mesh);
 
 			} /* namespace Import */
 

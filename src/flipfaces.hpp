@@ -28,6 +28,7 @@
 #ifndef NMESH_FLIPFACES_HPP_INCLUDED
 #define NMESH_FLIPFACES_HPP_INCLUDED
 
+#include "declspec.h"
 #include "mesh.hpp"
 
 namespace NMesh {
@@ -35,7 +36,7 @@ namespace NMesh {
 
 // RETURN CODES:
 // 0. Everything went well.
-int flip_faces(Mesh &mesh);
+DECLSPEC int flip_faces(Mesh &mesh);
 
 	} /* namespace Mutator */
 } /* namespace NMesh */
